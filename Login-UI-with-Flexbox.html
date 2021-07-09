@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login UI Team 1</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .bigone{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+
+        .title{
+            font-weight: 600;
+            font-size: 40px;
+            padding: 40px;
+        }
+
+        input[type=email],
+        input[type=password]{
+            width: 80%;
+            border: 2px solid #aaa;
+            border-radius: 4px;
+            margin: 10px 0;
+            outline: none;
+            padding: 15px;
+            box-sizing: border-box;
+            transition: .3s;
+            border-top: transparent;
+            border-right: transparent;
+            border-left: transparent;
+            opacity: .5;
+        }
+        input[type=email]:focus,
+        input[type=password]:focus{
+            border-color:dodgerblue;
+            box-shadow: 0 0 8px 0 dodgerblue;
+        }
+    
+        input[type=submit] {
+            width: 80%;
+            height: 50px;
+            background-color: #1390DE;
+            border: none;
+            border-radius: 20px;
+            color: #ffffff;
+            margin: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+    </style>
+
+</head>
+<body class="wrapper">
+    <form class="bigone">
+            <label class="title">Sign in</label>
+            <input type="email" id="userid" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <input type="submit" value="Sign in">
+    </form>
+</body>
+</html>
